@@ -170,8 +170,8 @@ def main(path):
     simple_model = SimpleStockPredictor(input_dim=input_dim)
     save_root_simple = 'modle_simple'
     save_root_complex = 'modle_complex'
-    train_model(simple_model, X_train, y_train, save_root_simple)
-    train_model(original_model, X_train, y_train, save_root_complex)
+    #train_model(simple_model, X_train, y_train, save_root_simple)
+    #train_model(original_model, X_train, y_train, save_root_complex)
 
     evaluate_model_extended(save_root_simple,X_test, y_test, dates_test,input_dim)
     evaluate_model_extended(save_root_complex, X_test, y_test, dates_test, input_dim)
